@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jivi Chatbot with Mistral (Ollama)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="chatbot.js"></script>
+</head>
+<body class="bg-gray-800 font-sans">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="w-full max-w-md p-6 bg-gray-900 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-center text-white mb-4">Jivi Chatbot (Mistral)</h2>
+            <div id="chatContainer" class="h-96 overflow-y-auto mb-4 p-2 bg-gray-800 rounded-lg">
+                <!-- Chat messages will appear here -->
+            </div>
+            <form id="chatForm" class="flex mb-4">
+                <input id="userMessage" type="text" class="w-full p-2 bg-gray-700 text-white rounded-lg" placeholder="Type a message..." required />
+                <button id="sendButton" type="submit" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Send</button>
+            </form>
+            <!-- Cancel Button -->
+            <button id="cancelButton" class="w-full px-4 py-2 bg-red-500 text-white rounded-lg" style="display: none;">
+                Cancel Task
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
